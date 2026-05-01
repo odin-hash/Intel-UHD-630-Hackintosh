@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>macOS Cheatsheet for Hackintosh</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; padding: 40px; line-height: 1.6; color: #333; max-width: 850px; margin: 0 auto; }
+  h1 { color: #111; border-bottom: 2px solid #eaecef; padding-bottom: 10px; }
+  h2 { color: #111; margin-top: 40px; border-bottom: 1px solid #eaecef; padding-bottom: 5px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+  th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+  th { background-color: #f8f9fa; font-weight: 600; }
+  code { background-color: #f1f3f5; padding: 3px 6px; border-radius: 4px; font-family: SFMono-Regular, Consolas, monospace; font-size: 0.9em; color: #d63384; }
+  .tip-box { background-color: #fff3cd; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #ffecb5; }
+  .magic-box { background-color: #e7f5ff; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #339af0; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 8px; }
+</style>
+</head>
+<body>
+
+<h1>macOS Cheatsheet for Hackintosh (Windows Keyboard) ⌨️🍏</h1>
+<p>Welcome to macOS! Since you are using a standard Windows PC keyboard on your Hackintosh, the physical keys map slightly differently to macOS. Here is a comprehensive guide to mastering your new system without getting confused!</p>
+
+<div class="magic-box">
+  <strong>🔑 The Magic Key: Windows = Command (⌘)</strong><br><br>
+  In macOS, the primary shortcut key is the <strong>Command (⌘)</strong> key. On your physical keyboard, this is the <strong>Windows</strong> key. Any time a Mac tutorial tells you to press "Command", you should press the "Windows" key.
+  <ul>
+    <li><strong>Alt Key</strong> = Acts as the <strong>Option (⌥)</strong> key on Mac.</li>
+    <li><strong>Ctrl Key</strong> = Acts as the <strong>Control (⌃)</strong> key on Mac (mostly used to mimic a right-click).</li>
+  </ul>
+</div>
+
+<h2>👶 Absolute Beginner Basics</h2>
+<p>If this is your first time using a Mac, here is how to do the absolute essentials:</p>
+<table>
+  <tr><th>Action</th><th>How to do it</th></tr>
+  <tr><td><strong>Open Terminal (or any App)</strong></td><td>Press <code>Windows + Space</code> to open Spotlight Search, type <code>Terminal</code> (or any app name/math problem), and hit <code>Enter</code>.</td></tr>
+  <tr><td><strong>Right-Click</strong></td><td>Tap the trackpad with <strong>two fingers</strong>, OR hold the <code>Ctrl</code> key while clicking.</td></tr>
+  <tr><td><strong>Change Volume & Brightness</strong></td><td>Press <code>F11/F12</code> for Volume and <code>F1/F2</code> for Brightness. You can also click the Control Center icon (two toggles) in the top right menu bar.</td></tr>
+  <tr><td><strong>Close vs. Quit</strong></td><td>Clicking the red "X" only closes the window but leaves the app running. To free up memory and fully close it, press <code>Windows + Q</code>.</td></tr>
+</table>
+
+<h2>💡 Essential Mac & Hackintosh Tips</h2>
+<ul>
+  <li><strong>Installing Apps (.dmg vs .exe):</strong> Mac apps usually download as <code>.dmg</code> (Disk Image) files. When you open one, a small window pops up showing the App icon and an Applications folder. <strong>Do not just double-click the app!</strong> You must <em>click and drag</em> the app icon into that Applications folder.</li>
+  <li><strong>Fixing "Backwards" Scrolling:</strong> By default, macOS uses "Natural Scrolling" (like a smartphone). If you are using a standard mouse wheel and hate this, go to <strong>System Settings -> Mouse</strong> and turn off <strong>Natural Scrolling</strong>.</li>
+  <li><strong>⚠️ The Hackintosh Golden Rule:</strong> Because you are running macOS on PC hardware, you cannot just click "Update Now" for major new macOS versions. You <em>must</em> update your OpenCore EFI folder and kexts first. Always check Hackintosh forums before updating!</li>
+</ul>
+
+<h2>📝 Text Editing & Everyday Use</h2>
+<table>
+  <tr><th>Action</th><th>PC Keyboard Shortcut</th></tr>
+  <tr><td><strong>Copy</strong></td><td><code>Windows + C</code></td></tr>
+  <tr><td><strong>Paste</strong></td><td><code>Windows + V</code></td></tr>
+  <tr><td><strong>Cut</strong></td><td><code>Windows + X</code></td></tr>
+  <tr><td><strong>Undo</strong></td><td><code>Windows + Z</code></td></tr>
+  <tr><td><strong>Redo</strong></td><td><code>Windows + Shift + Z</code></td></tr>
+  <tr><td><strong>Select All</strong></td><td><code>Windows + A</code></td></tr>
+  <tr><td><strong>Save</strong></td><td><code>Windows + S</code></td></tr>
+  <tr><td><strong>Find</strong></td><td><code>Windows + F</code></td></tr>
+</table>
+
+<h2>📁 Finder & File Management</h2>
+<table>
+  <tr><th>Action</th><th>PC Keyboard Shortcut</th><th>Description</th></tr>
+  <tr><td><strong>Open a File</strong></td><td><code>Windows + O</code> or <code>Windows + ↓</code></td><td>(Pressing just <code>Enter</code> like on Windows will <em>rename</em> it).</td></tr>
+  <tr><td><strong>Rename a File</strong></td><td><code>Enter</code></td><td>Renames the selected file/folder.</td></tr>
+  <tr><td><strong>Preview File</strong></td><td><code>Spacebar</code></td><td>Opens Quick Look to preview a file instantly.</td></tr>
+  <tr><td><strong>Select Multiple Files</strong></td><td><code>Windows + Click</code></td><td>Use the Windows key instead of Ctrl to select individual files.</td></tr>
+  <tr><td><strong>Delete File (to Trash)</strong></td><td><code>Windows + Backspace</code></td><td>Moves the selected item to the Trash.</td></tr>
+  <tr><td><strong>Empty Trash</strong></td><td><code>Windows + Shift + Backspace</code></td><td>Empties the Trash.</td></tr>
+  <tr><td><strong>New Folder</strong></td><td><code>Windows + Shift + N</code></td><td>Creates a new folder.</td></tr>
+  <tr><td><strong>Go to Folder (Paths)</strong></td><td><code>Windows + Shift + G</code></td><td><strong>Essential!</strong> Lets you type a path like <code>/Volumes/EFI</code> to access hidden drives.</td></tr>
+  <tr><td><strong>Show Hidden Files</strong></td><td><code>Windows + Shift + .</code></td><td>Toggles visibility of hidden files (files starting with a dot).</td></tr>
+</table>
+
+<h2>🪟 Window & App Management</h2>
+<table>
+  <tr><th>Action</th><th>PC Keyboard Shortcut</th><th>Description</th></tr>
+  <tr><td><strong>Close Window</strong></td><td><code>Windows + W</code></td><td>Closes the frontmost window.</td></tr>
+  <tr><td><strong>Quit App</strong></td><td><code>Windows + Q</code></td><td>Completely quits the active application.</td></tr>
+  <tr><td><strong>Switch Apps</strong></td><td><code>Windows + Tab</code></td><td>Switches to the next most recently used app (like <code>Alt + Tab</code>).</td></tr>
+  <tr><td><strong>Hide App</strong></td><td><code>Windows + H</code></td><td>Hides the windows of the front app.</td></tr>
+  <tr><td><strong>Show Desktop</strong></td><td><code>Windows + F3</code></td><td>Temporarily pushes all windows aside to show your desktop.</td></tr>
+</table>
+
+<h2>📸 Screenshots & Screen Recording</h2>
+<table>
+  <tr><th>Action</th><th>PC Keyboard Shortcut</th><th>Description</th></tr>
+  <tr><td><strong>Screenshot (Full)</strong></td><td><code>Windows + Shift + 3</code></td><td>Captures the entire screen.</td></tr>
+  <tr><td><strong>Screenshot (Selection)</strong></td><td><code>Windows + Shift + 4</code></td><td>Turns cursor into a crosshair to select an area.</td></tr>
+  <tr><td><strong>Screenshot (Window)</strong></td><td><code>Windows + Shift + 4</code>, then <code>Space</code></td><td>Captures a specific window with a nice drop shadow.</td></tr>
+  <tr><td><strong>Screen Recording</strong></td><td><code>Windows + Shift + 5</code></td><td>Opens the Screenshot utility to record video.</td></tr>
+</table>
+
+<h2>🔧 System & Power</h2>
+<table>
+  <tr><th>Action</th><th>PC Keyboard Shortcut</th><th>Description</th></tr>
+  <tr><td><strong>Force Quit</strong></td><td><code>Windows + Alt + Esc</code></td><td>Opens the Force Quit window (similar to <code>Ctrl + Alt + Delete</code>).</td></tr>
+  <tr><td><strong>Lock Screen</strong></td><td><code>Ctrl + Windows + Q</code></td><td>Immediately locks your Mac screen.</td></tr>
+</table>
+
+</body>
+</html>
