@@ -50,6 +50,8 @@ If this is your first time using a Mac, here is how to do the absolute essential
 | **Delete File (to Trash)** | `Windows + Backspace` | Moves the selected item to the Trash. |
 | **Empty Trash** | `Windows + Shift + Backspace` | Empties the Trash. |
 | **New Folder** | `Windows + Shift + N` | Creates a new folder. |
+| **Go to Folder (Paths)** | `Windows + Shift + G` | **Essential!** Lets you type a path like `/Volumes/EFI` to access hidden drives. |
+| **Show Hidden Files** | `Windows + Shift + .` | Toggles visibility of hidden files (files starting with a dot). |
 
 ## 🪟 Window & App Management
 
